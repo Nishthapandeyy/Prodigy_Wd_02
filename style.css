@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:lightblue;
+    color: black;
+} 
+#firstpage{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(https://images.unsplash.com/photo-1562071707-7249ab429b2a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    background-size: contain;
+    background-position: center;
+}
+#firstpage{
+    padding: 25px 50px;
+    margin: 25px 50px;
+
+}
+.name{
+    font-size: 80px;
+}
+nav{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav ul li a:link, a:visited{
+    background-color: white;
+    color: black;
+}
+nav ul li a:hover, a:active{
+    background-color:orange;
+    color: white;
+}
+.headertext{
+    font-size: 20px;
+}
+.headertext h1 {
+    margin: 50px 10px;
+}
+.fluid-container h1 span{
+    color:red;
+}
+/* -------about------- */
+#about{
+    padding: 90px 0;
+    color: black;
+    display: flexbox;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    width: 35%;
+}
+.about-col-1 img{
+ width : 100%;
+border-radius: 15px;
+}
+.about-col-2{
+     flex-basis: 60%;
+
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: red;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0px 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: antiquewhite;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px ;
+    background: aliceblue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: white;
+    font-size: 15px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+
+}
+/*-------services--------*/
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.services-list div{
+    background: #555;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+}
+.services-list div i{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: blue;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:link, div:visited{
+    background-color: white;
+    color: black;
+
+}
+.services-list div:hover, div:active{
+    background-color:orange;
+    color: white;
+
+}
+/*--------portfolio--------*/
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+ width : 100%;
+ border-radius: 10px;
+ display: block;
+ transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: #555;
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.button{
+    margin: 15px 700px ;
+    padding: 15px 32px;
+    font-size: 16px;
+    text-align: center;
+    display:inline-block ;
+    color: blue;
+    border: solid 1px red;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.5s;
+    background-color: red;
+}
+.button:hover{
+    background-color: red;
+    color: white;
+}
+/*--------Contact-------*/
+
+ .contact-left p{
+     margin-top: 30px;
+ }
+ .contact-left p i{
+     color: white;
+     margin-right: 16px;
+     font-size: 25px;
+     
+ }
+ .icons{
+     margin-top: 30px;
+ }
+ .icons a{
+     text-decoration: none;
+     font-size: 30px;
+     margin-right: 15px;
+     color: white;
+     display: inline-block;
+     transition: transform 0.5s;
+ }
+ .icons a:hover{
+    color:red;
+    transform: translateY(-5px);
+ }
+.submit1{
+    display: inline-block;
+    font-size: 16px;
+    display:inline-block ;
+    color: blue;
+    border: solid 1px red;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.5s;
+    background-color: red;
+    padding: 15px 32px;
+}
+.submit1:hover{
+    background-color: green;
+}
+.contact-right form{
+width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:white;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background:white;
+    font-weight:300;
+    margin-top: 20px;
+}
+.copyright i{
+    color:red;
+}
+.para{
+    background-color: white;
+}
+
+
+.avatar {
+    height: 320px;
+    width: 320px;
+    border-radius: 100%;
+    margin:0px 160px 0px 160px;
+}
+
+
+.fluid-container {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    max-width: 60%; 
+}
+
+.content h1 {
+    margin: 0; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.services-list p{
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .fluid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center;
+    }
+}

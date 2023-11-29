@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dcd35649e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div id="firstpage">
+        <div class="bucket">
+            <nav>
+                <h1 class="name">NISHTHA</h1>
+                <ul>
+                    <li><a href="#firstpage">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headertext">
+            <p>WEB DEVELOPER</p>
+        </div>
+        <div class="fluid-container d-flex justify-content-between align-items-center">
+            <div class="content">
+                <h1 style="font-size: 8vh;">Heyaa!<br>This is <span>Nishtha</span> from America.</h1>
+            </div>
+            <img class="avatar" src="assets/images/dp.png" alt="Profile image">
+        </div>
+
+    </div>
+
+    <!----about---->
+    <div id="about">
+        <div class="bucketnew">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/dp.png" alt="Profile image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    
+                    <div class="services-list">
+                        <div class="about-me-content">
+                       
+
+                            <p style="color: whitesmoke;">
+                                Hi, I am NISHTHA and I work as a web developer.<br> I am a software engineer who
+                        loves to create websites as well as apps for people.<br> I think that people should look at the
+                        bigger picture when they are building something.<br> I love to work in groups where everyone can
+                        voice their opinions and ideas.<br> In the end, I love to work towards one goal where in the end
+                        we all can contribute towards making a good website. <br>In my free time, you can see me
+                        listening to songs and binge-watching series when I am not working with my clients.
+                            </p>
+                        
+                        </div>
+                    </div>
+                    <div class="tab-titles">
+                        <!-- <p class="tab-links active-link" onclick="opentab(this)">Skills</p> -->
+                        <!--Missing data-tab-->
+                        <p class="tab-links active-link" data-tab="Skills" onclick="opentab(this)">Skills</p>
+                        <!--Added data-tab-->
+                        <!-- <p class="tab-links" onclick="opentab(this)">Experience</p> --> <!--Missing data-tab-->
+                        <p class="tab-links" data-tab="Experience" onclick="opentab(this)">Experience</p>
+                        <!--Added data-tab-->
+                        <!-- <p class="tab-links"  onclick="opentab(this)">Certification</p>   -->
+                        <!--Missing data-tab-->
+                        <p class="tab-links" data-tab="Certification" onclick="opentab(this)">Certification</p>
+                        <!--Added data-tab-->
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>GIT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2022-current</span><br>Web Developer at GOOGLE</li>
+                            <li><span>2019-2022</span><br>Web Developer at TCS</li>
+                            <li><span>2017-2019</span><br>Web Developer at MICROSOFT</li>
+                            <li><span> 2016-2017</span><br>Web Developer at OPTUM</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certification">
+                        <ul>
+                            <li><span>Apr-May(2015)</span><br>Prodigy-internship(backend)</li>
+                            <li><span>Sep-Nov(2015)</span><br>Bharatintern-internship(frontend)</li>
+                            <li><span>Mar-MAy(2016)</span><br>CODSOFT- internship(Full stack)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------services------>
+    <div id="services">
+        <div class="contaniner">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+
+                    <h2>Web Development</h2>
+                    <p>
+                        Web development is the work involved in developing a website for the Internet (World Wide Web)
+                        or an intranet (a private network).<br> Web development can range from developing a simple
+                        single static page of plain text to complex web applications,<br> electronic businesses, and
+                        social network services.<br>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Front end developmet</h2>
+                    <p>
+                        Front End Development includes creating a user interface website or application.<br> It involves
+                        designing and implementing the visual elements,<br> layout and features that users see and
+                        interact with.<br> Front-end developers primarily use HTML, CSS, and JavaScript to structure the
+                        content.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Back end development</h2>
+                    <p>
+                        Back-end development means working on server-side software,<br> which focuses on everything you
+                        can't see on a website.<br> Back-end developers ensure the website performs correctly, focusing
+                        on databases, back-end logic,<br> application programming interface (APIs), architecture, and
+                        servers.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------portfolio------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img
+                        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>The website is simply site that sell products to customer online</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img
+                        src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww">
+                    <div class="layer">
+                        <h3>Social media Website</h3>
+                        <p>This is the website where people can connect with each other<br> and share their personal
+                            information,picutres,video ideas<br>in real time </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img
+                        src="https://images.unsplash.com/photo-1605379399642-870262d3d051?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww">
+                    <div class="layer">
+                        <h3>Portfolio Website </h3>
+                        <p>The website is used to showcase of your best work to a professional.<br>It is more personal
+                            website where creative people<br>add their creativity to showcase thier industry. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------contact------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@portfolio.com</p>
+                    <p><i class="fa-solid fa-phone"></i>01233456678</p>
+                    <div class="icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @NISHTHA. Made with<i class="fa-solid fa-heart"></i>by Easy Tutorial</p>
+        </div>
+    </div>
+
+    <!---Javascript-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
+
+</body>
+
+</html>
